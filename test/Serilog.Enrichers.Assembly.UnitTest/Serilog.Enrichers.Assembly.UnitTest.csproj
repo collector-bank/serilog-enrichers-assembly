@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="DelegatingSink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceSystemInformationalVersionEnricher_Test.cs" />
     <Compile Include="SourceSystemEnricher_Test.cs" />
   </ItemGroup>
   <ItemGroup>
