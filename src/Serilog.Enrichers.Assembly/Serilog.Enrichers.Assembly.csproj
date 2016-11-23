@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceSystemEnricher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
