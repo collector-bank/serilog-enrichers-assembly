@@ -1,4 +1,5 @@
 # Serilog.Enrichers.Assembly
+[![Build status](https://ci.appveyor.com/api/projects/status/eylou7edcewcxus7/branch/master?svg=true)](https://ci.appveyor.com/project/iremmats/serilog-enrichers-assembly/branch/master)
 
 Enriches Serilog events with information from the process environment.
  
