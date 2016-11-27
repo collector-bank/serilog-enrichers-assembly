@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Serilog.Enrichers.Assembly</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Serilog.Enrichers.Assembly</title>
     <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
     <owners>Collector Bank</owners>
@@ -17,6 +17,6 @@
     </dependencies> 
   </metadata>
   <files>
-    <file src="src\Serilog.Enrichers.Assembly\bin\release\**" target=""/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\release\**" target="lib\"/>
   </files>
 </package>
