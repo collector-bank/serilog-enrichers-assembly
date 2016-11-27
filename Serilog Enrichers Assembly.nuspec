@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Serilog.Enrichers.Assembly</id>
+    <version>1.0.0</version>
+    <title>Serilog.Enrichers.Assembly</title>
+    <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
+    <owners>Collector Bank</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enriches Serilog events with information from the process environment.</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>serilog enricher assembly collectorbank collector</tags>
+  </metadata>
+  <files>
+    <file src="src\Serilog.Enrichers.Assembly\bin\release\**" target=""/>
+  </files>
+</package>
