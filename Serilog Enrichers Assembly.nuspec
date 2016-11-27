@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Serilog.Enrichers.Assembly</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Serilog.Enrichers.Assembly</title>
     <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
     <owners>Collector Bank</owners>
@@ -11,6 +11,10 @@
     <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>serilog enricher assembly collectorbank collector</tags>
+	<projectUrl>https://github.com/collector-bank/serilog-enrichers-assembly</projectUrl>
+	<dependencies>
+      <dependency id="Serilog" version="2.0.0" />
+    </dependencies> 
   </metadata>
   <files>
     <file src="src\Serilog.Enrichers.Assembly\bin\release\**" target=""/>
