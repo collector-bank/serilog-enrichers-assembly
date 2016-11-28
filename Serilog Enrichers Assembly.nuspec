@@ -17,6 +17,6 @@
     </dependencies> 
   </metadata>
   <files>
-    <file src="src\Serilog.Enrichers.Assembly\bin\release\Serilog.Enrichers.Assembly.pdf" target="lib\"/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\release\Serilog.Enrichers.Assembly.dll" target="lib\"/>
   </files>
 </package>
