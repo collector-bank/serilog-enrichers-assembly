@@ -13,7 +13,7 @@ Then, apply the enricher to you `LoggerConfiguration`:
 
 ```csharp
 Log.Logger = new LoggerConfiguration()
-    .Enrich.With<SourceSystem<ClassInAssemblyOfSourceSystem>>()
+    .Enrich.With<SourceSystemEnricher<ClassInAssemblyOfSourceSystem>>()
     // ...other configuration...
     .CreateLogger();
 ```
@@ -22,5 +22,5 @@ Log.Logger = new LoggerConfiguration()
 
 The package includes:
 
- * `SourceSystem<T>()` - adds `SourceSystem` based the name of the assembly that T resides in.
- * `SourceSystemInformationalVersion<T>()` - adds `SourceSystemInformationalVersion` based on the assemblys informational version.
+ * `SourceSystemEnricher<T>()` - adds `SourceSystemEnricher` based the name of the assembly that T resides in.
+ * `SourceSystemInformationalVersionEnricher<T>()` - adds `SourceSystemInformationalVersionEnricher` based on the assemblys informational version.
