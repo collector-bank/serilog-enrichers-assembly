@@ -22,5 +22,5 @@ Log.Logger = new LoggerConfiguration()
 
 The package includes:
 
- * `SourceSystemEnricher<T>()` - adds `SourceSystemEnricher` based the name of the assembly that `T` resides in.
- * `SourceSystemInformationalVersionEnricher<T>()` - adds `SourceSystemInformationalVersionEnricher` based on the assemblys informational version.
+ * `SourceSystemEnricher<T>` - adds `SourceSystemEnricher` based on the name of the assembly that `T` resides in.
+ * `SourceSystemInformationalVersionEnricher<T>` - adds `SourceSystemInformationalVersionEnricher` based on the assembly's informational version.
