@@ -9,7 +9,7 @@ To use the enricher, first install the NuGet package:
 Install-Package Serilog.Enrichers.Assembly
 ```
 
-Then, apply the enricher to you `LoggerConfiguration`:
+Then, apply the enricher to your `LoggerConfiguration`:
 
 ```csharp
 Log.Logger = new LoggerConfiguration()
@@ -22,5 +22,5 @@ Log.Logger = new LoggerConfiguration()
 
 The package includes:
 
- * `SourceSystemEnricher<T>()` - adds `SourceSystemEnricher` based the name of the assembly that T resides in.
+ * `SourceSystemEnricher<T>()` - adds `SourceSystemEnricher` based the name of the assembly that `T` resides in.
  * `SourceSystemInformationalVersionEnricher<T>()` - adds `SourceSystemInformationalVersionEnricher` based on the assemblys informational version.
