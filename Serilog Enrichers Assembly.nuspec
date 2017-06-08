@@ -17,6 +17,7 @@
     </dependencies> 
   </metadata>
   <files>
-    <file src="src\Serilog.Enrichers.Assembly\bin\release\**\Serilog.Enrichers.Assembly.dll" target="lib\"/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\Release\net45\Serilog.Enrichers.Assembly.dll" target="lib\net45\Serilog.Enrichers.Assembly.dll"/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\Release\netstandard1.6\Serilog.Enrichers.Assembly.dll" target="lib\netstandard16\Serilog.Enrichers.Assembly.dll"/>
   </files>
 </package>
