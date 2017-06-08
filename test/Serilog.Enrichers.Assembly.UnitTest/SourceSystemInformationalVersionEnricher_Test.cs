@@ -1,5 +1,7 @@
 ﻿namespace Serilog.Enrichers.Assembly.UnitTest
 {
+    using System.Reflection;
+
     using NUnit.Framework;
 
     using Serilog.Events;
@@ -18,7 +20,7 @@
 
             logger.Information("Test log");
 
-            Assert.AreEqual("3.2.1", ((ScalarValue)logEvent.Properties["SourceSystemInformationalVersion"]).Value);
+            Assert.AreEqual("3.2.1.0", ((ScalarValue)logEvent.Properties["SourceSystemInformationalVersion"]).Value);
         }
 
         [Test]
@@ -26,13 +28,13 @@
         {
             LogEvent logEvent = null;
             var logger = new LoggerConfiguration()
-                .Enrich.With(new SourceSystemInformationalVersionEnricher(typeof(SourceSystemEnricher_Test).Assembly))
+                .Enrich.With(new SourceSystemInformationalVersionEnricher(typeof(SourceSystemEnricher_Test).GetTypeInfo().Assembly))
                 .WriteTo.Sink(new DelegatingSink(e => logEvent = e))
                 .CreateLogger();
 
             logger.Information("Test log");
 
-            Assert.AreEqual("3.2.1", ((ScalarValue)logEvent.Properties["SourceSystemInformationalVersion"]).Value);
+            Assert.AreEqual("3.2.1.0", ((ScalarValue)logEvent.Properties["SourceSystemInformationalVersion"]).Value);
         }
     }
 }

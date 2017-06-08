@@ -9,7 +9,7 @@
     public class SourceSystemEnricher<T> : SourceSystemEnricher
     {
         public SourceSystemEnricher()
-            : base(typeof(T).Assembly)
+            : base(typeof(T).GetTypeInfo().Assembly)
         {
         }
     }
