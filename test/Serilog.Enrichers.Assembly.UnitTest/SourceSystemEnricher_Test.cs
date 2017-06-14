@@ -1,5 +1,7 @@
 ﻿namespace Serilog.Enrichers.Assembly.UnitTest
 {
+    using System.Reflection;
+
     using NUnit.Framework;
 
     using Serilog.Events;
@@ -26,7 +28,7 @@
         {
             LogEvent logEvent = null;
             var logger = new LoggerConfiguration()
-                .Enrich.With(new SourceSystemEnricher(typeof(Serilog.Context.LogContext).Assembly))
+                .Enrich.With(new SourceSystemEnricher(typeof(Serilog.Context.LogContext).GetTypeInfo().Assembly))
                 .WriteTo.Sink(new DelegatingSink(e => logEvent = e))
                 .CreateLogger();
 

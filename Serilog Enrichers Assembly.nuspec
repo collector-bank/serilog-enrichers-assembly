@@ -2,21 +2,22 @@
 <package >
   <metadata>
     <id>Serilog.Enrichers.Assembly</id>
-    <version>1.0.4</version>
+    <version>1.1.0</version>
     <title>Serilog.Enrichers.Assembly</title>
-    <authors>Adam Lith, Mats Iremark, Felix Svensson</authors>
+    <authors>Adam Lith, Mats Iremark, Felix Svensson, Martin Almström</authors>
     <owners>Collector Bank</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Enriches Serilog events with information from the process environment.</description>
-    <releaseNotes>First release</releaseNotes>
-    <copyright>Copyright 2016</copyright>
+    <releaseNotes>Added net standard 1.6 support</releaseNotes>
+    <copyright>Copyright © 2017</copyright>
     <tags>serilog enricher assembly collectorbank collector</tags>
 	<projectUrl>https://github.com/collector-bank/serilog-enrichers-assembly</projectUrl>
 	<dependencies>
-      <dependency id="Serilog" version="2.0.0" />
+      <dependency id="Serilog" version="2.4.0" />
     </dependencies> 
   </metadata>
   <files>
-    <file src="src\Serilog.Enrichers.Assembly\bin\release\Serilog.Enrichers.Assembly.dll" target="lib\"/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\Release\net45\Serilog.Enrichers.Assembly.dll" target="lib\net45\Serilog.Enrichers.Assembly.dll"/>
+    <file src="src\Serilog.Enrichers.Assembly\bin\Release\netstandard1.6\Serilog.Enrichers.Assembly.dll" target="lib\netstandard16\Serilog.Enrichers.Assembly.dll"/>
   </files>
 </package>

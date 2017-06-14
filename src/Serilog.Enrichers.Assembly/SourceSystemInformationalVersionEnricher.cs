@@ -10,7 +10,7 @@
     public class SourceSystemInformationalVersionEnricher<T> : SourceSystemInformationalVersionEnricher
     {
         public SourceSystemInformationalVersionEnricher()
-            :base(typeof(T).Assembly)
+            :base(typeof(T).GetTypeInfo().Assembly)
         {
         }
     }
@@ -29,6 +29,7 @@
 
             try
             {
+                
                 _version = FileVersionInfo.GetVersionInfo(assembly.Location).ProductVersion;
             }
             catch (Exception)
