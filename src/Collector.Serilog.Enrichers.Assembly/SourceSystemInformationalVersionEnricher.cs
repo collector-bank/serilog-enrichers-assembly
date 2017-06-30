@@ -1,13 +1,12 @@
-﻿namespace Serilog.Enrichers.Assembly
+﻿namespace Collector.Serilog.Enrichers.Assembly
 {
     using System;
     using System.Diagnostics;
     using System.Reflection;
 
-    using Serilog.Core;
-    using Serilog.Events;
+    using global::Serilog.Core;
+    using global::Serilog.Events;
 
-    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
     public class SourceSystemInformationalVersionEnricher<T> : SourceSystemInformationalVersionEnricher
     {
         public SourceSystemInformationalVersionEnricher()
@@ -15,8 +14,7 @@
         {
         }
     }
-
-    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
+    
     public class SourceSystemInformationalVersionEnricher : ILogEventEnricher
     {
         private readonly string _version;

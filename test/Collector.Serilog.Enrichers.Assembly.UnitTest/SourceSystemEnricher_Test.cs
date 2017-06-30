@@ -1,10 +1,13 @@
-﻿namespace Serilog.Enrichers.Assembly.UnitTest
+﻿namespace Collector.Serilog.Enrichers.Assembly.UnitTest
 {
     using System.Reflection;
 
-    using NUnit.Framework;
+    using Collector.Serilog.Enrichers.Assembly;
 
-    using Serilog.Events;
+    using global::Serilog;
+    using global::Serilog.Events;
+
+    using NUnit.Framework;
 
     [TestFixture]
     public class SourceSystemEnricher_Test
@@ -28,7 +31,7 @@
         {
             LogEvent logEvent = null;
             var logger = new LoggerConfiguration()
-                .Enrich.With(new SourceSystemEnricher(typeof(Serilog.Context.LogContext).GetTypeInfo().Assembly))
+                .Enrich.With(new SourceSystemEnricher(typeof(global::Serilog.Context.LogContext).GetTypeInfo().Assembly))
                 .WriteTo.Sink(new DelegatingSink(e => logEvent = e))
                 .CreateLogger();
 

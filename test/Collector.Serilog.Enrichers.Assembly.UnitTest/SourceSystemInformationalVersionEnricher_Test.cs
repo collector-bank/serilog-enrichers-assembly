@@ -1,10 +1,13 @@
-﻿namespace Serilog.Enrichers.Assembly.UnitTest
+﻿namespace Collector.Serilog.Enrichers.Assembly.UnitTest
 {
     using System.Reflection;
 
-    using NUnit.Framework;
+    using Collector.Serilog.Enrichers.Assembly;
 
-    using Serilog.Events;
+    using global::Serilog;
+    using global::Serilog.Events;
+
+    using NUnit.Framework;
 
     [TestFixture]
     public class SourceSystemInformationalVersionEnricher_Test

@@ -1,9 +1,10 @@
-﻿namespace Serilog.Enrichers.Assembly.UnitTest
+﻿namespace Collector.Serilog.Enrichers.Assembly.UnitTest
 {
     using System;
 
-    using Serilog.Core;
-    using Serilog.Events;
+    using global::Serilog;
+    using global::Serilog.Core;
+    using global::Serilog.Events;
 
     public class DelegatingSink : ILogEventSink
     {
@@ -11,8 +12,7 @@
 
         public DelegatingSink(Action<LogEvent> write)
         {
-            if (write == null) throw new ArgumentNullException(nameof(write));
-            _write = write;
+            _write = write ?? throw new ArgumentNullException(nameof(write));
         }
 
         public void Emit(LogEvent logEvent)

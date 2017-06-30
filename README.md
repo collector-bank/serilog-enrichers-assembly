@@ -1,12 +1,12 @@
-# Serilog.Enrichers.Assembly
-[![Build status](https://ci.appveyor.com/api/projects/status/eylou7edcewcxus7/branch/master?svg=true)](https://ci.appveyor.com/project/iremmats/serilog-enrichers-assembly/branch/master)
+# Collector.Serilog.Enrichers.Assembly
+[![Build status](https://ci.appveyor.com/api/projects/status/c5ojwsjhle19nd8u/branch/master?svg=true)](https://ci.appveyor.com/project/CollectorHeimdal/serilog-enrichers-assembly/branch/master)
 
-Enriches Serilog events with information from the process environment.
+Enriches Serilog events with information from the process environment using assembly information.
  
 To use the enricher, first install the NuGet package:
 
 ```powershell
-Install-Package Serilog.Enrichers.Assembly
+Install-Package Collector.Serilog.Enrichers.Assembly
 ```
 
 Then, apply the enricher to your `LoggerConfiguration`:

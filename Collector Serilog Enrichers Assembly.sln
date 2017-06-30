@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{22544A6C-3911-4412-A50D-A8DA3B9829F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{68ECB278-C184-44F7-801B-E8E9CC7977B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{502C92F7-BA54-4883-9917-2FF728F309EE}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collector.Serilog.Enrichers.Assembly", "src\Collector.Serilog.Enrichers.Assembly\Collector.Serilog.Enrichers.Assembly.csproj", "{010D4319-E689-4AEC-84AC-0B5B13153F7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collector.Serilog.Enrichers.Assembly.UnitTest", "test\Collector.Serilog.Enrichers.Assembly.UnitTest\Collector.Serilog.Enrichers.Assembly.UnitTest.csproj", "{B33317CB-E691-45BE-8941-8271D99BB3B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010D4319-E689-4AEC-84AC-0B5B13153F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010D4319-E689-4AEC-84AC-0B5B13153F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010D4319-E689-4AEC-84AC-0B5B13153F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010D4319-E689-4AEC-84AC-0B5B13153F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33317CB-E691-45BE-8941-8271D99BB3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33317CB-E691-45BE-8941-8271D99BB3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33317CB-E691-45BE-8941-8271D99BB3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33317CB-E691-45BE-8941-8271D99BB3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{010D4319-E689-4AEC-84AC-0B5B13153F7D} = {22544A6C-3911-4412-A50D-A8DA3B9829F3}
+		{B33317CB-E691-45BE-8941-8271D99BB3B8} = {68ECB278-C184-44F7-801B-E8E9CC7977B5}
+	EndGlobalSection
+EndGlobal
