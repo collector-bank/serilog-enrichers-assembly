@@ -6,13 +6,13 @@
     <DebugType>portable</DebugType>
     <AssemblyName>Serilog.Enrichers.Assembly</AssemblyName>
     <PackageId>Serilog.Enrichers.Assembly</PackageId>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
     <Copyright>Copyright © 2017</Copyright>
-    <Description />
-    <Authors />
+    <Description>Obsolete. Use nuget package Collector.Serilog.Enrichers.Assembly instead.</Description>
+    <Authors>Heimdal</Authors>
+    <PackageReleaseNotes>Obsolete. Use nuget package Collector.Serilog.Enrichers.Assembly instead.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/collector-bank/serilog-enrichers-assembly</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/collector-bank/serilog-enrichers-assembly</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">

@@ -7,6 +7,7 @@
     using Serilog.Core;
     using Serilog.Events;
 
+    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
     public class SourceSystemInformationalVersionEnricher<T> : SourceSystemInformationalVersionEnricher
     {
         public SourceSystemInformationalVersionEnricher()
@@ -15,6 +16,7 @@
         }
     }
 
+    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
     public class SourceSystemInformationalVersionEnricher : ILogEventEnricher
     {
         private readonly string _version;

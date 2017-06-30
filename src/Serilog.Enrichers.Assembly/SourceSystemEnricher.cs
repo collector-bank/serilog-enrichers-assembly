@@ -6,6 +6,7 @@
     using Serilog.Core;
     using Serilog.Events;
 
+    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
     public class SourceSystemEnricher<T> : SourceSystemEnricher
     {
         public SourceSystemEnricher()
@@ -14,6 +15,7 @@
         }
     }
 
+    [Obsolete("Use nuget package Collector.Serilog.Enrichers.Assembly instead.")]
     public class SourceSystemEnricher : ILogEventEnricher
     {
         private readonly string _name;
