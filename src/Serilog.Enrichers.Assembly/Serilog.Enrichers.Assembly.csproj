@@ -13,6 +13,7 @@
     <PackageReleaseNotes>Obsolete. Use nuget package Collector.Serilog.Enrichers.Assembly instead.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/collector-bank/serilog-enrichers-assembly</PackageProjectUrl>
     <RepositoryUrl>https://github.com/collector-bank/serilog-enrichers-assembly</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
