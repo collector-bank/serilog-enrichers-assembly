@@ -6,15 +6,17 @@
     <DebugType>portable</DebugType>
     <AssemblyName>Collector.Serilog.Enrichers.Assembly</AssemblyName>
     <PackageId>Collector.Serilog.Enrichers.Assembly</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Copyright>Copyright © 2017</Copyright>
-    <Authors>Heimdal</Authors>
+    <Authors>Team Heimdal</Authors>
     <PackageProjectUrl>https://github.com/collector-bank/serilog-enrichers-assembly</PackageProjectUrl>
     <RepositoryUrl>https://github.com/collector-bank/serilog-enrichers-assembly</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>Enriches Serilog events with information from an assembly.
-The package includes SourceSystemEnricher and SourceSystemInformationalVersionEnricher.
-</Description>
+The package includes SourceSystemEnricher and SourceSystemInformationalVersionEnricher.</Description>
+    <PackageIconUrl>https://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
+    <Company>Collector Bank AB</Company>
+    <PackageTags>serilog</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
